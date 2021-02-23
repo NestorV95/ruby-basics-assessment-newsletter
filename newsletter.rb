@@ -29,7 +29,8 @@ ARTICLES = [
 
 def calculate_recipients
   # Using the SUBSCRIBERS and UNSUBSCRIBED arrays,
-  # write a method that will return an array of only the subscribers who haven't unsubscribed
+  # write a method that will return an array of only the subscribers who haven't unsubscribed 
+  subscribers.find{|sub| sub != unsubscribed}
 end
 
 def first_n_articles(number_of_articles
